@@ -1,0 +1,18 @@
+@import "/src/app/styles/mixins";
+
+.Button {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.clear {
+  @include reset-btn;
+}
+
+.themeToggle {
+  @include reset-btn;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
