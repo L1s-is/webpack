@@ -1,0 +1,12 @@
+.Sidebar {
+  width: var(--sidebarWidth);
+  height: var(--sidebarHeight);
+  position: relative;
+  flex-shrink: 0;
+  transition: 0.3s ease;
+  border-right: 1px solid var(--secondary-color);
+
+  &.isCollapsed {
+    width: var(--sidebarWidthCollapsed);
+  }
+}

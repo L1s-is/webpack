@@ -9,3 +9,13 @@
   background: var(--bg-color);
   color: var(--primary-color);
 }
+
+.content-page {
+  height: var(--contentHeight);
+  display: flex;
+}
+
+.content-main {
+  width: 100%;
+  padding: 20px;
+}

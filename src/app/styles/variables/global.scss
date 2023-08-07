@@ -14,4 +14,10 @@
   --secondary-color: #98ecf5;
 
   --navbar-height: 59px;
+
+  --sidebarWidth: 250px;
+  --sidebarWidthCollapsed: 100px;
+  --sidebarHeight: 100%;
+
+  --contentHeight: calc(100vh - var(--navbar-height))
 }
