@@ -1,0 +1,7 @@
+@import "../../../app/styles/mixins";
+
+.PageLoader {
+  @include align-centered;
+
+  width: 100%;
+}

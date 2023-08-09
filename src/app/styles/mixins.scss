@@ -7,3 +7,9 @@
   appearance: none;
   text-align: left;
 }
+
+@mixin align-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

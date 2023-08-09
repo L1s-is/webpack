@@ -1,0 +1,8 @@
+@import "/src/app/styles/mixins";
+
+.notFoundPage {
+  @include align-centered;
+
+  height: calc(100vh - var(--navbar-height));
+  font: var(--font-l);
+}
