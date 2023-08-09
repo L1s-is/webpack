@@ -1,5 +1,5 @@
 :root {
-  --font-family-main: Roboto, Serif;
+  --font-family-main: roboto, serif;
   --font-line: 1.5;
 
   --font-size-m: 18px;
@@ -19,5 +19,5 @@
   --sidebarWidthCollapsed: 100px;
   --sidebarHeight: 100%;
 
-  --contentHeight: calc(100vh - var(--navbar-height))
+  --contentHeight: calc(100vh - var(--navbar-height));
 }

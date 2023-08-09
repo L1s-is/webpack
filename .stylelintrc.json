@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "scss/dollar-variable-pattern": null,
+    "custom-property-pattern": null,
+    "selector-class-pattern": null,
+    "color-function-notation": null,
+    "custom-property-empty-line-before": null,
+    "no-missing-end-of-source-newline": null
+  }
+}
