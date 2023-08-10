@@ -7,5 +7,8 @@
   "Раскрыть": "Toggle",
   "Главная страница": "Main",
   "О нас": "About",
-  "Страница не найдена": "Page not found"
+  "Страница не найдена": "Page not found",
+  "Что-то пошло не так": "Something went wrong",
+  "Обновить страницу": "Refresh The page",
+  "Вызвать ошибку": "Throw an error"
 }

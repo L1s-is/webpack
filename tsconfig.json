@@ -12,7 +12,12 @@
       "*": ["./src/*"]
     },
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es2015.promise",
+      "ES2017",
+      "DOM",
+    ]
   },
   "ts-node": {
     "compilerOptions": {

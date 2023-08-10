@@ -1,6 +1,6 @@
 import { lazy } from "react";
 
-// @ts-ignore
 export const NotFoundPageAsync = lazy(() => new Promise((resolve) => {
+// @ts-ignore
   resolve(import("./notFoundPage"));
 }));

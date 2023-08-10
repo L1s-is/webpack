@@ -1,17 +1,50 @@
 @import "/src/app/styles/mixins";
 
 .Button {
+  --highlightTransform: translate(-120%, -25%) rotate(35deg);
+  --highlightLeft: -24px;
+  --highlightContent: "";
+
+  padding: 8px 16px;
+  position: relative;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: all 1s cubic-bezier(.19,1,.22,1);
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  overflow: hidden;
+
+  &::before {
+    content: var(--highlightContent);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: var(--highlightLeft);
+    width: 6px;
+    height: 200%;
+    transform: var(--highlightTransform);
+    background-color: var(--color-white);
+    opacity: 0.8;
+    filter: blur(2px);
+    transition: all 550ms cubic-bezier(.19,1,.42,1);
+  }
+
+  &:hover {
+    --highlightLeft: 150%;
+  }
 }
 
 .clear {
+  --highlightContent: none;
+
   @include reset-btn;
 
   color: var(--primary-color);
 }
 
 .themeToggle {
+  --highlightContent: none;
+
   @include reset-btn;
 
   &:hover {

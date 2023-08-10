@@ -1,0 +1,10 @@
+@import "/src/app/styles/mixins";
+
+.PageError {
+  @include align-centered;
+
+  height: calc(100vh - var(--navbar-height));
+  flex-direction: column;
+  gap: 8px;
+  font: var(--font-l);
+}
