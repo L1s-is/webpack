@@ -10,6 +10,11 @@ interface SidebarProps {
     className?: string
 }
 
+export const testId = {
+  sidebar: "sidebar",
+  toggleButton: "toggleButton",
+};
+
 export function Sidebar({ className }: SidebarProps) {
   const { t } = useTranslation();
   const [ isCollapsed, setIsCollapsed ] = useState(false);
@@ -18,8 +23,17 @@ export function Sidebar({ className }: SidebarProps) {
   };
 
   return (
-    <div className={classNames(cls.Sidebar, { [cls.isCollapsed]: isCollapsed }, [ className ])}>
-      <Button type="button" onClick={handleClick}>{t(isCollapsed ? "Раскрыть" : "Скрыть")}</Button>
+    <div
+      className={classNames(cls.Sidebar, { [cls.isCollapsed]: isCollapsed }, [ className ])}
+      data-testid={testId.sidebar}
+    >
+      <Button
+        type="button"
+        onClick={handleClick}
+        data-testid={testId.toggleButton}
+      >
+        {t(isCollapsed ? "Раскрыть" : "Скрыть")}
+      </Button>
       <div className={classNames(cls.Switchers, {}, [ className ])}>
         <ThemeSwitcher />
         <LangSwitcher />
